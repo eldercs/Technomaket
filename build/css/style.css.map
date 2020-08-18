@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.less"],"names":[],"mappings":"AACA,KACI,WAAA,MACA,UAAA","file":"style.css","sourcesContent":["@color : green;\r\nbody{\r\n    background: @color;\r\n    font-size:18px;\r\n}"]}

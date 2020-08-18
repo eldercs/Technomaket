@@ -1,0 +1,1 @@
+var d;function c(c,n){return c+n}console.log(c(2,4));
