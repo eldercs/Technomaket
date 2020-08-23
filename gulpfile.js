@@ -25,7 +25,8 @@ const imagemin = require('gulp-imagemin');
 ]; */
 const cssFiles = [
     './src/css/main.less',
-    './src/css/header.less'
+    './src/css/header.less',
+    './src/css/styles.less'
 ];
 const jsFiles = [
     './src/js/lib.js',
