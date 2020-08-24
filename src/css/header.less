@@ -4,7 +4,7 @@ header{
     background-color: var(--accent);
 }
 .header-top{
-    background-color:rgb(29, 39, 61);
+    background-color:#293449;
     min-height: 42px;
 }
 .main-header{
@@ -23,17 +23,41 @@ header{
     padding-top: 13px;
     margin-bottom: -5px;
     text-align: center;
-    background-color: red;
+    background-color: #ee3643;
 }
 .poisk {
     position: relative;
     width:270px;
+    height:42px;
+    color:white;
 }
-.nav-button{
-    padding:10px 20px;
+.poisk::before{
+    content:"";
+    position:absolute;
+    height:17px;
+    top:12px;
+    left:17px;
+    width:17px;
+    background:url("/src/img/icon-search.png") no-repeat;
+}
+.poisk-input{
+    padding-top:12px;
+    padding-bottom:16px;
+    font-size:17px;
+    margin-left:45px;
+    background:transparent;
+    border:none;
+    color:white;
+}
+// для поля ввода
+input[type="text"]::-webkit-input-placeholder {
+    color: white;
+} 
+   input[type="text"]::-moz-placeholder {
+    color: white;
 }
 .zakaz{
-    background:rgb(2, 194, 2);
+    background:#63a63e;
 }
 .header-item{
     display:flex;
@@ -43,8 +67,37 @@ header{
     padding:0;
     margin:0;
     li{
-        padding-top:12px;
-        height:auto;
         height:42px;
+        padding-top:8px;
     }
+}
+.nav-button{
+    padding-left:40px;
+    padding-right:32px;
+    font-size:17px;
+    font-family: Cuprum;
+    font-weight: 400;
+    position: relative;
+}
+
+.nav-button1::before{
+    content: "";
+    top:2px;
+    left:14px;
+    width:14px;
+    height:16px;
+    position: absolute;
+    background:url("/src/img/icon-bookmark.png")
+}
+.nav-button2::before{
+    content: "";
+    top:2px;
+    left:12px;
+    width:15px;
+    height:15px;
+    position: absolute;
+    background:url("/src/img/cart-icon.png")
+}
+.nav-button__green{
+    padding:9px 12px;
 }
