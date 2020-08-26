@@ -1,7 +1,7 @@
 header{
     font-size: 18px;
     line-height: 24px;
-    background-color: var(--accent);
+    background:#f3f7f9;
 }
 .header-top{
     background-color:#293449;
@@ -99,4 +99,81 @@ input[type="text"]::-moz-placeholder {
 }
 .nav-button__green{
     padding:9px 13px;
+}
+.header-info{
+    display:flex;
+    justify-content: space-between;
+    width:960px;
+    padding:0 65px;
+    margin:46px auto 0px;
+}
+.info__text{
+    width:200px;
+    color: #ee3643;
+    font-style:italic;
+    margin:0;
+    line-height: 23px;
+}
+.info__telephone{
+    position: relative;
+}
+.telephone__number{
+    border:3px solid white;
+    color: #ee3643;
+    text-align:center;
+    padding: 8px 54px 8px 74px;
+    font-size: 21px;
+    line-height: 21px;
+    margin:0;
+    margin-bottom:2px;
+}
+.telephone__number::before{
+    content:"";
+    width:19px;
+    height:19px;
+    position: absolute;
+    background: url("/src/img/icon-phone.png");
+    left:15px;
+}
+.info__adress{
+    margin:0 auto;
+}
+.info__login{
+    position: relative;
+}
+.login-btn{
+    background:white;
+    border:none;
+    width:120px;
+    height:45px;
+    padding-left:20px;
+}
+.login-btn::before{
+    content:"";
+    position: absolute;
+    width:20px;
+    height:17px;
+    background:url("/src/img/icon-login.png");
+    left:14px;
+}
+.register-btn{
+    background:white;
+    border:none;
+    width:120px;
+    height:45px;
+}
+.header-navigation{
+    margin-top:44px;
+}
+.main-navigation{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width:960px;
+    margin:0 auto;
+    background-color: #32425c;
+    padding:22px 52px;
+    li{
+        font-size: 17px;
+    }
 }
