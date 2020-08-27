@@ -76,35 +76,39 @@ input[type="search"]::-moz-placeholder {
     padding:0;
     margin:0;
     li{
+        list-style-type: none;
         height:42px;
-        padding-top:8px;
+        padding-top:10px;
+    }
+    a{
+        color:white;
     }
 }
 .nav-button{
+    position: relative;
     padding-left:50px;
     padding-right:22px;
     font-size:17px;
     font-weight: 400;
-    position: relative;
 }
 
 .nav-button1::before{
     content: "";
+    position: absolute;
     top:14px;
     left:24px;
     width:14px;
     height:16px;
-    position: absolute;
     opacity:0.3;
     background:url("/src/img/icon-bookmark.svg");
 }
 .nav-button2::before{
     content: "";
+    position: absolute;
     top:14px; 
     left:24px;
     width:15px;
     height:15px;
-    position: absolute;
     opacity:0.3;
     background:url("/src/img/icon-cart.svg");
 }
@@ -124,7 +128,8 @@ input[type="search"]::-moz-placeholder {
     background-color: #5fbb2d;
 }
 
-.nav-button1, .nav-button2{
+.nav-button1, 
+.nav-button2{
     padding-top:13px;
     padding-bottom:13px;
 }
@@ -161,9 +166,9 @@ input[type="search"]::-moz-placeholder {
 }
 .telephone__number::before{
     content:"";
+    position: absolute;
     width:19px;
     height:19px;
-    position: absolute;
     background: url("/src/img/icon-phone.png");
     left:15px;
 }
@@ -222,8 +227,11 @@ input[type="search"]::-moz-placeholder {
     li{ 
         text-align:center;
         font-size: 17px;
+        list-style-type: none;
         a{
         display:block;
+        text-decoration: none;
+        color:white;
         padding-top: 16px;
         padding-bottom: 20px;
         padding-left: 24px;

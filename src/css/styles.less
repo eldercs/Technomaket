@@ -1,18 +1,26 @@
 @import "header.less";
-@import "main.less";
 @import "focus.less";
+
+@font-face {
+    font-family: "Cuprum"; /* Гарнитура шрифта */
+    src: url("/fonts/Cuprum-Regular.ttf"); /* Путь к файлу со шрифтом */
+}
 
 html{
     background-color:white;
     height:100%;
 }
-*,::after, ::before{
+img{
+    max-width:100%;
+}
+a{
+    text-decoration: none;
+}
+*,::after, 
+::before{
     box-sizing: border-box;
 }
-@font-face {
-    font-family: Cuprum; /* Гарнитура шрифта */
-    src: url("/fonts/Cuprum-Regular.ttf"); /* Путь к файлу со шрифтом */
-}
+
 body{
     min-width: 960px;
    // min-height: 100%;
@@ -27,10 +35,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; 
-  font-size: 100%; 
-  line-height: 1.15; 
-  margin: 0; 
+    font-family: inherit; 
+    font-size: 100%; 
+    line-height: 1.15; 
+    margin: 0; 
 }
 .visually-hidden{
     position: absolute;
@@ -42,10 +50,4 @@ textarea {
     clip:rect(0 0 0 0 );
     overflow: hidden;
 }
-li{
-    list-style-type: none;
-a{
-    text-decoration: none;
-    color:white;
-}
-}
+
