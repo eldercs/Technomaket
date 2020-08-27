@@ -3,18 +3,27 @@
 }
 .header-logo:focus{
     outline: none;
-   // border:2px solid #5fbb2d;
     background:#5fbb2d;
 }
-.poisk-input:focus{
-    outline: none;
-    background: #923137;
-   // border:2px solid red;
+ .scan-input:focus + .scan-icon::before{
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 17px;
+    top: 50%;
+    left: 17px;
+    transform: translateY(-50%);
+    opacity:1;
+    background: url("/src/img/icon-search2.png") no-repeat;
+} 
+.scan-input:focus{
+    color:black;
+    background-color:white;
 }
+
 .nav-button:focus{
     outline: none;
     background: #923137;
-   // border:2px solid red;
 }
 
 .navigation__button:focus{

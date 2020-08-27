@@ -8,19 +8,21 @@
         <link rel="stylesheet"  href="build/css/style.css" />
     </head>
     <body>
-        <header>
+        <header class = "header">
             <div class = "header-top">
             <div class="main-header">
                 <a href="#" class="header-logo">
                     <img src="src/img/logo.png" alt="Лого техномарт">
                 </a>
-                <div class = "poisk">
-                    <input type="text" class = "poisk-input" placeholder="Поиск:">
-                </div>
+                <form class = "scan" action="https://echo.htmlacademy.ru/" method="get">
+                    <input type="search" class = "scan-input" id = "search" name="search" placeholder="Поиск:">
+                    <label for="scan-input" class = "scan-icon"></label>
+                    <button type="submit" class="visually-hidden">Отправить</button>
+                </form>
                 <ul class="header-item">
-                    <li class = "kladka"><a href = "#" class = "nav-button nav-button1">Закладки: 0</a></li>
-                    <li class = "korzina"><a href = "#" class = "nav-button nav-button2">Корзина: 0</a></li>
-                    <li class = "zakaz"><a href = "#" class = "nav-button nav-button__green">Оформить заказ</a></li>
+                    <li class = "bookmark"><a href = "#" class = "nav-button nav-button1">Закладки: 0</a></li>
+                    <li class = "basket"><a href = "#" class = "nav-button nav-button2">Корзина: 0</a></li>
+                    <li class = "order"><a href = "#" class = "nav-button nav-button__green">Оформить заказ</a></li>
                 </ul>
             </div>
             </div>

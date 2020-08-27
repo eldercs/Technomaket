@@ -1,4 +1,4 @@
-header{
+.header{
     font-size: 18px;
     line-height: 24px;
     background:#f3f7f9;
@@ -25,39 +25,48 @@ header{
     text-align: center;
     background-color: #ee3643;
 }
-.poisk {
+.scan {
     position: relative;
     width:270px;
     height:42px;
     color:white;
 }
-.poisk::before{
+// при наведении на поиск
+.scan:hover{
+    background-color: #212a3a;
+    .scan-icon::before{
+        opacity: 1;
+    }
+}
+.scan-icon::before{
     content:"";
     position:absolute;
     height:17px;
     top:12px;
     left:17px;
     width:17px;
+    opacity:0.3;
     background:url("/src/img/icon-search.png") no-repeat;
 }
-.poisk-input{
+.scan-input{
     padding-top:12px;
     padding-bottom:12px;
     font-size:16px;
-    margin-left:45px;
+    padding-left:45px;
+    width:270px;
     background:transparent;
     border:none;
     color:white;
 }
 // для поля ввода
-input[type="text"]::-webkit-input-placeholder {
+input[type="search"]::-webkit-input-placeholder {
     color: white;
 } 
-input[type="text"]::-moz-placeholder {
+input[type="search"]::-moz-placeholder {
     color: white;
 }
 
-.zakaz{
+.order{
     background:#63a63e;
 }
 .header-item{
@@ -99,19 +108,19 @@ input[type="text"]::-moz-placeholder {
     opacity:0.3;
     background:url("/src/img/icon-cart.svg");
 }
-.kladka:hover{
+.bookmark:hover{
     background-color: #212a3a;
     .nav-button1::before{
         opacity:1;
     }
 }
-.korzina:hover{
+.basket:hover{
     background-color: #212a3a;
     .nav-button2::before{
         opacity:1;
     }
 }
-.zakaz:hover{
+.order:hover{
     background-color: #5fbb2d;
 }
 
