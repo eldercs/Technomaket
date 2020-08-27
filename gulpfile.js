@@ -72,7 +72,8 @@ gulp.task('img-compress', ()=>{
 function watch(){
     browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: "."
+          //  index:'nothing.html'
         }
     });
     gulp.watch('./src/img/**', gulp.series('img-compress'))
