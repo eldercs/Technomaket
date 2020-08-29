@@ -1,26 +1,83 @@
-.main-page{
+
+.main__promo-block{
+    display:grid;
+    grid-template-rows: -webkit-min-content;
+    grid-template-rows: min-content; 
+    grid-template-columns: 300px 300px 300px;
+    gap: 20px;
     max-width:960px;
-    margin:0 auto;
-    padding:0;
+    margin:59px auto;
+    padding:0 10px;
 }
 .promo-list{
+    display:contents;
     padding:0;
+    margin:0;
+}
+.main-slider{
+    position: relative;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color:black;
+    background-image: url("/src/img/Layer_99.jpg");
+    background-repeat: no-repeat;
+    color:white;
+    a{
+        display:block;
+        width:195px;
+        text-decoration: none;
+        text-align:center;
+        color:white;
+        margin-top:116px;
+        margin-left:25px;
+        padding:10px;
+        background:#ee3643;
+    }
+    h3{
+        text-transform: uppercase;
+        font-size: 36px;
+        font-weight: 700;
+        margin:0;
+        padding:25px 0 0 24px;
+    }
+    p{
+        font-size: 18px;
+        padding-left:24px;
+        margin:0;
+        margin-top:5px;
+    }
 }
 .promo{
+    position: relative;
+    overflow: hidden;
     width:300px;
     color:white;
+    margin:0;
     padding-top:10px;
     padding-left:20px;
     min-height:123px;
+
     h2{
         margin:10px 0 0 0;
     }
     a{
+        display:block;
         margin-top:15px;
         padding:10px;
         min-height:38px;
         text-align:center;
         color:white;
+        text-transform: uppercase;
+        width:135px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    a:hover{
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    a:focus{
+        background-color: rgba(255, 255, 255, 0.4);
     }
 }
 .promo__matherial{
@@ -28,22 +85,128 @@
     background-image:url("/src/img/icon-1.png");
     background-repeat: no-repeat;
     background-position: 85%;
-    a{  
-        display:block;
-        text-transform: uppercase;
-        width:135px;
-        background-color: rgba(255, 255, 255, 0.2);
-    }
 }
 .promo__tools{
     background-color: #3bbce3;
+    background-image:url("/src/img/icon-2.png");
+    background-repeat: no-repeat;
+    background-position: 85%;
 }
 .promo__technica{
     background-color: #dc91d8;
+    background-image:url("/src/img/icon-3.png");
+    background-repeat: no-repeat;
+    background-position: 85%;
 }
 .promo__discount{
     background-color: #8ed78f;
+    background-image:url("/src/img/icon-4.png");
+    background-repeat: no-repeat;
+    background-position: 85%;
 }
 .promo__free{
     background-color: #ffc047;
+    background-image:url("/src/img/icon-5.png");
+    background-repeat: no-repeat;
+    background-position: 85%;
+}
+.banner-new{
+    position: absolute;
+    right:-40px;
+    top:-5px;
+    height:30px;
+    padding:8px;
+    width:120px;
+    font-size:14px;
+    background-color:#ff5357;
+    text-align: center;
+    transform: rotate(45deg);
+}
+.slider-arrow{
+    display:flex;
+    position: absolute;
+    justify-content: space-between;
+    width:90%;
+    left:30px;
+    top:130px;
+}
+.button-right{
+    transform: rotate(45deg);
+    margin:0;
+    padding:0;
+    width:25px;
+    height:25px;
+    list-style:none;
+    background-color:transparent;
+    border:none;
+    border-left:3px solid white;
+    border-bottom:3px solid white;
+}
+.button-left{
+    transform: rotate(45deg);
+    margin:0;
+    padding:0;
+    width:25px;
+    height:25px;
+    list-style:none;
+    background-color:transparent;
+    border:none;
+    border-right:3px solid white;
+    border-top:3px solid white;
+}
+
+
+
+.wrapper-list{
+    max-width:960px;
+    margin:0 auto;
+}
+.button-red{
+    background:#ee3643;
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+    padding:10px;
+}
+.button-red:hover{
+    background-color: #ca2c37;
+}
+.button-red:focus{
+    background-color: #ba2732;
+}
+.title-items{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f5f0;
+    h2{
+        position: relative;
+        color: #32425c;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 30px;
+        margin-left:30px;
+    }
+    a{
+        width:250px;
+        margin-right:24px;
+    }
+}
+.catalog-list{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding:0;
+    li{
+        border:1px solid #eaeaea;
+    }
+    a{  
+        text-align:center;
+        color: #000000;
+    }
+    h3{
+        max-width:155px;
+        margin:0 auto;
+    }
 }
