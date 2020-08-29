@@ -198,15 +198,107 @@
     justify-content: space-between;
     list-style: none;
     padding:0;
-    li{
+    .list-item{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
         border:1px solid #eaeaea;
     }
     a{  
         text-align:center;
-        color: #000000;
+       /*  color: #000000; */
     }
     h3{
         max-width:155px;
         margin:0 auto;
+        color: #000000;
     }
+}
+.discount{
+    min-height:18px;
+}
+.item-price{
+    background-color:#ee3643;
+    background-image:url("/src/img/btn_copy_14.jpg");
+    background-repeat:no-repeat;
+    margin:0 auto;
+    max-width:140px;
+    height:38px;
+    color:white;
+    padding:10px;
+    margin-bottom:21px;
+}
+.new-item{
+    position: relative;
+    overflow: hidden;
+}
+.new-item::before{
+    content:"new";
+    position: absolute;
+    color:white;
+    font-size: 16px;
+    right:-40px;
+    top:5px;
+    height:30px;
+    padding:8px;
+    width:120px;
+    background-color:#ff5357;
+    text-align: center;
+    transform: rotate(45deg);
+    z-index: 10;
+}
+
+.item-menu{
+    position: absolute;
+   // display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    width: 215px;
+    height: 150px;
+    padding:0;
+    list-style:none;
+    display:none;
+
+}
+.list-item:focus .item-menu,
+.list-item:hover .item-menu{
+    display:flex;
+}
+.list-item:hover,.list-item:focus{
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+.item-btn{
+    display:flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #63a63e;
+    width:135px;
+    height:38px;
+    padding:8px;
+    border: 3px solid #63a63e;
+    border-radius: 5px;
+    color:white;
+}   
+.item-btn1{
+    position: relative;
+}
+.item-btn1::before{
+    content: "";
+    position: absolute;
+    background-image:url("/src/img/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: 10%;
+    left:12px;
+    width:15px;
+    height:15px;
+    opacity: 0.3;
+}
+.item-btn2{
+    position: relative;
+    color: #32425c;
+    background-color:white;
+    margin-top:7px;
 }
