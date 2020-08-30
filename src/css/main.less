@@ -302,3 +302,45 @@
     background-color:white;
     margin-top:7px;
 }
+.title-marok{
+    max-width:960px;
+    margin:0 auto;
+}
+.catalog-marok{
+    max-width:960px;
+    margin:0 auto;
+    ul{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        padding:0;
+        align-items: center;
+        list-style:none;
+    }
+    li{
+        display:flex;
+        justify-content:center;
+        min-width:220px;
+        min-height:145px;
+        align-items: center;
+        margin:10px auto;
+        border:1px solid #eaeaea;
+        -khtml-user-select: none;
+        -o-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+}
+.firm:hover{
+    box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+.firm:focus,
+.firm:active{
+    box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+    background-color: #ffffff;
+    img{
+        opacity: 0.3;
+    }
+}
