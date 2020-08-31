@@ -114,7 +114,7 @@
     position: absolute;
     right:-40px;
     top:-5px;
-    height:30px;
+    min-height:30px;
     padding:8px;
     width:120px;
     font-size:14px;
@@ -135,7 +135,7 @@
     margin:0;
     padding:0;
     width:25px;
-    height:25px;
+    min-height:25px;
     list-style:none;
     background-color:transparent;
     border:none;
@@ -147,7 +147,7 @@
     margin:0;
     padding:0;
     width:25px;
-    height:25px;
+    min-height:25px;
     list-style:none;
     background-color:transparent;
     border:none;
@@ -223,7 +223,7 @@
     background-repeat:no-repeat;
     margin:0 auto;
     max-width:140px;
-    height:38px;
+    min-height:38px;
     color:white;
     padding:10px;
     margin-bottom:21px;
@@ -256,7 +256,7 @@
     align-items: center;
     background-color:white;
     width: 215px;
-    height: 150px;
+    min-height: 150px;
     padding:0;
     list-style:none;
     display:none;
@@ -276,7 +276,7 @@
     justify-content: space-between;
     background-color: #63a63e;
     width:135px;
-    height:38px;
+    min-height:38px;
     padding:8px;
     border: 3px solid #63a63e;
     border-radius: 5px;
@@ -293,7 +293,7 @@
     background-position: 10%;
     left:12px;
     width:15px;
-    height:15px;
+    min-height:15px;
     opacity: 0.3;
 }
 .item-btn2{
@@ -346,4 +346,75 @@
 }
 .invise{
     display:none;
+}
+.service{
+    background-color:#f5f8fa;
+}
+.service-box{
+    max-width:960px;
+    padding-top:68px;
+    margin:0 auto;
+}
+.service__tittle{
+    h2{
+        text-transform: uppercase;
+        font-family: Cuprum;
+    }
+    p{
+        font-size:14px;
+    }
+}
+.service__image{
+    display:flex;
+    margin-top:79px;
+    ul{
+        padding:0;
+    }
+    li{
+        list-style:none;
+    }
+}
+.service-button{
+    background-color:#32425c;
+    color:white;
+    border:none;
+    padding-left:23px;
+    text-align:left;
+    min-height:61px;
+    width:240px;
+    font-size: 21px;
+}
+.service-button:active,
+.service-button:focus{
+    background-color:white;
+    box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff;
+    color:#32425c;
+}
+.service-list-button{
+    position: relative;
+}
+.service-list-button::after{
+    content:"";
+    position: absolute;
+    height: 279px;
+    width: 10px;
+    background-image:url(/src/img/Layer_118_copy.svg);
+    left:230px;
+    top:-40px;
+    z-index: 10;
+}
+.service-list{
+    margin-left:80px;
+}
+.service-info{
+    p{
+        width:275px;
+    }
+  //  display:none;
+  display:block;
+  background-image:url("/src/img/Layer_131.png");
+  background-repeat:no-repeat;
+  background-position: 100% 20%;
+  width:619px;
+  min-height:280px;
 }
