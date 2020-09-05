@@ -29,6 +29,7 @@ const cssFiles = [
     './src/css/styles.less',
     './src/css/focus.less',
     './src/css/normalize.less',
+    './src/css/catalog.less'
 ];
 const jsFiles = [
     './src/js/lib.js',
