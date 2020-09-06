@@ -3,3 +3,54 @@
     margin:0 auto;
     display:grid;
 }
+.info__login{
+    ul{
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding:0;
+        margin-top:10px;
+    }
+    li{
+        list-style:none;
+        text-decoration: underline;
+        color: #32425c;
+    }
+}
+.basket2{
+    background-color: #ee3643;
+}
+.name-login{
+    position: relative;
+    background-color:white;
+    color: #000000;
+     padding:12px 47px;
+    font-size:21px;
+}
+.login{
+    position: relative;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 15px;
+    padding-left: 17px;
+}
+.name-login::before{
+    content:" ";
+    position: absolute;
+    width:20px;
+    height:18px;
+    opacity:0.3;
+    background-image:url("/src/img/icon-logout.svg");
+    left:13px;
+    top:16px;
+}
+.name-login::after{
+    content: "";
+    position: absolute;
+    width:20px;
+    height:17px;
+    opacity:0.3;
+    background-image:url("/src/img/icon-login.svg");
+    right:10px;
+    top:16px;
+}
